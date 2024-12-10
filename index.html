@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuluBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+       <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Teorias</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ordem Cronológica</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Dicas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Clássicos</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da MegaBooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Lulu</b>Books</h1>
+    </div>
+ 
+    <ul class="opções">
+      <input type="checkbox" id="opções-menu" class="opções__botão">
+      <label for="opções-menu" class="opções__rotulo">
+      <li class="opções__item">Categorias</li>
+      </label>
+
+      <ul class="lista-menu">
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Teorias</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ordem Cronológica</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Dicas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Clássicos</a>
+        </li>
+      </ul>
+
+      <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+      <li class="opções__item"><a href="#" class="opções__link">Minha Estante</a></li>
+
+    </ul>
+
+    <div class="container">
+      <a href="#">
+        <img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem-transparente">
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha Mochila</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Quer um terror para se borrar de medo?</h2>
+    <p class="banner__texto">Encontre em nossa estante livros de seu interesse</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual vai ser hoje?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Famosos por aqui</h2>
+    <!-- Slider main container -->
+         <div class="carrossel__container">
+         <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/jogosmortais.svg"
+            alt="Livro sobre o famoso filme jogos mortais"></div>
+        <div class="swiper-slide"><img src="img/invocdomal.svg" alt="Livro sobre o famoso filme invocação do mal 4"></div>
+        <div class="swiper-slide"><img src="img/it.svg" alt="Livro sobre o famoso filme it a coisa">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/pearl.svg" alt="Livro sobre pearl" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/panico.svg" alt="Livro sobre panico" />
+        </div>
+    
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Aliança do Terror</h2>
+          <p class="descrição__texto">
+            Discussões sobre teorias e muito mais
+          </p>
+        </div>
+        <img src="img/Angular.svg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+    <div class="carrossel__container">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/jogosmortais.svg"
+            alt="Livro sobre o famoso filme jogos mortais"></div>
+        <div class="swiper-slide"><img src="img/invocdomal.svg" alt="Livro sobre o famoso filme invocação do mal 4">
+        </div>
+        <div class="swiper-slide"><img src="img/it.svg" alt="Livro sobre o famoso filme it a coisa">
+        </div>
+        <div class="swiper-slide"><img src="img/pearl.svg" alt="Livro sobre pearl"></div>
+        <div class="swiper-slide"><img src="img/panico.svg" alt="Livro sobre panico"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Escritor do mês</h3>
+          <h2 class="descrição__titulo-livro">Junji Ito</h2>
+          <p class="descrição__texto">Escritor Famoso e Renomado
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/junjiito.svg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Android</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Resenhas</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Entrevistas</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Histórias</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Notícias e Lançamentos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Guias de Leitura</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Discussões e Fóruns</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Adaptações Cinematográficas</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+    <h2 class="contato__titulo">Fique sabendo das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.</p>
+    </div>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Lulu Grupo</h2>
+
+    <ul class="lista-rodapé">
+    <li class="lista-rodapé__titulo">Administradores</li>
+    <li class="lista-rodapé__item">
+      <img src="img/lorraine 1.svg" alt="adm lorraine">
+      <a href="#" class="lista-rodapé__link">Lolo</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/ed warren 1.svg" alt="adm ed">
+      <a href="#" class="lista-rodapé__link">Edinho</a> 
+    </li>
+    </ul>
+    
+    <ul class="lista-rodapé">
+    <li class="lista-rodapé__titulo">Mocinhos</li>
+    <li class="lista-rodapé__item">
+      <img src="img/beverly 1.svg" alt="beverly">
+      <a href="#" class="lista-rodapé__link">Bev</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/balofo 1.svg" alt="balofo">
+      <a href="#" class="lista-rodapé__link">Ben Bolo Fofo</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/bill 1.svg" alt="Bill">
+      <a href="#" class="lista-rodapé__link">Gado da Bev</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/stanley 1.svg" alt="Stan">
+      <a href="#" class="lista-rodapé__link">Suicida</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/richie 1.svg" alt="Richie">
+      <a href="#" class="lista-rodapé__link">Enrustido</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/eddie 1.svg" alt="Eddie">
+      <a href="#" class="lista-rodapé__link">Mommy Issues</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/irmã irene 1.svg" alt="player mundo">
+      <a href="#" class="lista-rodapé__link">Crente do cu quente</a> 
+    </li>
+    </ul>
+    
+    <ul class="lista-rodapé">
+    <li class="lista-rodapé__titulo">Ridiculos</li>
+    <li class="lista-rodapé__item">
+      <img src="img/ghostface 1.svg" alt="Ghost">
+      <a href="#" class="lista-rodapé__link">Ghostface Coquette</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/itacoisa 1.svg" alt="It">
+      <a href="#" class="lista-rodapé__link">It Coquette</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/jigsaw.svg" alt="JIgSaw">
+      <a href="#" class="lista-rodapé__link">Jig Coquette</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/tomie 1.svg" alt="Tomie">
+      <a href="#" class="lista-rodapé__link">Destruidora de Lares</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/souichi 1.svg" alt="Souchi">
+      <a href="#" class="lista-rodapé__link">Martelo</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/pearl 1.svg" alt="Pearl">
+      <a href="#" class="lista-rodapé__link">Borderlinda</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/hellokitty terrifier 1.svg" alt="Terrifier">
+      <a href="#" class="lista-rodapé__link">ArtKittyClown</a> 
+    </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
